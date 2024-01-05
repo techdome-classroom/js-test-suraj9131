@@ -6,6 +6,8 @@ var romanToInt = function(s) {
     function romanToInt(s) {
     const romanNumerals = {
         'I': 1,
+        'II': 2,
+        'III':3,
         'V': 5,
         'X': 10,
         'L': 50,
@@ -22,7 +24,7 @@ var romanToInt = function(s) {
 
         if (nextSymbolValue > currentSymbolValue) {
             result += nextSymbolValue - currentSymbolValue;
-            i++; // Skip the next symbol since it's already considered
+            i++;
         } else {
             result += currentSymbolValue;
         }
