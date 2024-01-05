@@ -1,4 +1,4 @@
-var isValID = function (s) {
+var isValid = function (s) {
     
     const leftSymbols = [];
    
@@ -23,4 +23,4 @@ var isValID = function (s) {
     return leftSymbols.length === 0;
 };
 
-module.exports = {isValID};
+module.exports = {isValid};
